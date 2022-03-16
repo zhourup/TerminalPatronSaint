@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: admin
+    password: 123456
+    url: jdbc:mysql://127.0.0.1/data?useUnicode=true&serverTimezone=GMT&characterEncoding=utf8&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: guard-manage
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+server:
+  port: 8081
+logging:
+  level:
+    com.zhourup.guard: debug

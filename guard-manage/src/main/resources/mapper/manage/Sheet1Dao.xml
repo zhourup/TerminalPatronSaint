@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhourup.guard.manage.dao.Sheet1Dao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.zhourup.guard.manage.entity.Sheet1Entity" id="sheet1Map">
+        <result property="id" column="id"/>
+        <result property="laserRanging" column="laser_ranging"/>
+        <result property="inclinationMeasure" column="inclination_measure"/>
+        <result property="impactIntensity" column="impact_intensity"/>
+        <result property="staticLevel" column="static_level"/>
+        <result property="dangerousGas" column="dangerous_gas"/>
+        <result property="temperature" column="temperature"/>
+        <result property="preload" column="preload"/>
+        <result property="windSpeed" column="wind_speed"/>
+        <result property="waterSpeed" column="water_speed"/>
+        <result property="rainfall" column="rainfall"/>
+        <result property="windDirection" column="wind_direction"/>
+        <result property="waterDirection" column="water_direction"/>
+        <result property="waterDeep" column="water_deep"/>
+        <result property="time" column="time"/>
+    </resultMap>
+
+
+</mapper>
